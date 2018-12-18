@@ -14,7 +14,7 @@ const paths = {
         src: 'src/template/**/*.html'
     },
     styles: {
-        src: 'src/styles/**/*.scss',
+        src: 'src/styles/**/*.*',
         dest: 'build/assets/styles/'
     },    
     images: {
@@ -43,7 +43,7 @@ function template() {
 
 // scss
 function styles() {
-    return gulp.src('./src/styles/**/*.scss')
+    return gulp.src(paths.styles.src)
         .pipe(sass())
         .pipe(gulp.dest(paths.styles.dest))
 }

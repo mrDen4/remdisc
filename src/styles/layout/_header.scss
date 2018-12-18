@@ -1,163 +1,78 @@
 .header {
     .header__top {
-        background: #EEEEEE;
+        background: #273238;
 
-        @include tablets() {
-            padding-bottom: 20px;
+        .top__link {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            color: #ffff;
+            transition: .3s;
+
+            &:hover {
+                color: $red;
+            }
         }
-    }
 
-    .top__container, .bottom__container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+        .link__img {
+            margin-right: 10px;
+        }
 
-    .top__container {
-        @include tablets() {
-            flex-direction: column;
+        .top__col {
+            display: flex;
+            align-items: center;
+
+            &--clock {
+                margin-right: auto;
+            }
+
+            &--phone {
+                justify-content: flex-end;
+            }
+        }
+
+        .top__btn {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffff;
+            text-decoration: underline;
+            height: 100%;
+            cursor: pointer;
+            transition: .3s;
+            margin-left: 10px;
+
+            &:hover {
+                color: $red;
+            }
         }
     }
 
     .header__bottom {
-        background: #F5F5F5;
-        height: 70px;
-    }
-
-    .bottom__container {
-        height: 100%;
         padding-top: 10px;
-        padding-bottom: 10px;
 
-        @include tablets() {
+        .bottom__list {
+            display: flex;
             align-items: center;
-            text-align: center;
-            justify-content: center;
+            justify-content: space-between;
         }
-    }
 
-    .bottom__logo {
-        @include tablets() {
-            display: flex;
-        }
-    }
-
-    .top__text {
-        max-width: 270px;
-        line-height: 17px;
-
-        @include tablets() {
-            text-align: center;
-        }
-    }
-
-    .top__socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .socials__item {
-            margin-right: 10px;
-        }
-    }
-
-    .top__mail {
-        color: $black;
-        text-decoration: none;
-        transition: .3s;
-
-        &:hover {
-            color: $blue;
-        }
-    }
-
-    .top__address {
-        display: flex;
-        align-items: center;
-        transition: .3s;
-
-        &:hover {
-            color: $blue;
-        }
-    }
-
-    .top__contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .contacts__phone {
+        .list__item {
             color: $black;
             text-decoration: none;
-            transition: .3s;
-            font-weight: bold;
-
-            &:hover {
-                color: $blue;
-            }
-        }
-
-        .contacts__btn {
-            border: none;
-            background: none;
-            text-decoration: underline;
-            cursor: pointer;
-            color: $blue;
+            font-size: 16px;
             transition: .3s;
 
             &:hover {
-                color: $black;
-            }
-        }
-    }
-
-    .bottom__menu {
-        display: flex;
-        height: 100%;
-
-        @include tablets() {
-            display: none;
-        }
-
-        .menu__item {
-            margin-right: 30px;
-            height: 100%;
-
-            &:last-child {
-                margin-right: 0;
+                color: $red;
             }
         }
 
-        .item__link {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: $black;
-            text-decoration: none;
-            transition: .3s;
+        .bottom__block-btn {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-
-            &::after {
-                content: "";
-                width: 0;
-                height: 0;
-                background: $blue;
-                transition: .3s;
-            }
-
-            &:hover {
-                color: $blue;
-
-                &::after {
-                    content: "";
-                    width: 100%;
-                    height: 2px;
-                    margin-top: 20px;
-                    background: $blue;
-                }
-            }
+            justify-content: flex-end;
         }
     }
 }

@@ -1,0 +1,40 @@
+.services {
+    .services__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .list__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .item__link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: $red;
+                text-decoration: none;
+                font-size: 24px;
+                width: 100%;
+                height: 100%;
+                transition: .3s;
+
+                &:hover {
+                    opacity: .8;
+                }
+
+                .link__img {
+                    width: 100%;
+                }
+
+                .link__text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

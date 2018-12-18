@@ -1,0 +1,53 @@
+.hero {
+    background: url('../images/hero-bg.png');
+    background-size: cover;
+    min-height: 750px;
+    padding-bottom: 0;
+
+    .hero__container {
+        position: relative;
+    }
+
+    .hero__arrow {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+
+        &--l {
+            left: 0;
+            top: 50%;
+        }
+
+        &--r {
+            top: 50%;
+            right: 0;
+        }
+    }
+
+    .hero__slider {
+        display: flex;
+        width: 60%;
+        padding-left: 50px;
+
+        .slider__slide {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+        }
+
+        .slide__title {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .slide__text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .slide__btn {
+            width: 240px;
+        }
+    }
+}

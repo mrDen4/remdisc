@@ -5,88 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сигма</title>
+    <title>РемДиски</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/config/bootstrap-grid.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__top">
+            <div class="row header__top">
                 <div class="container top__container">
-                    <ul class="top__list">
-                        <li class="list__item">
-                            <a href="#" class="item__link">
+                    <div class="row top__row">
+                        <div class="col-md-4 top__col">
+                            <a href="#" class="top__link">
                                 <img src="./assets/images/header/address.png" alt="Адресс" class="link__img">
                                 <p class="link__text">
                                     г. Челябинск, ул. Краснопольский проспект 1/2
                                 </p>
                             </a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="item__link">
+                        </div>
+                        <div class="col-md-3 mr-auto top__col top__col--clock">
+                            <a href="#" class="top__link">
                                 <img src="./assets/images/header/clock.png" alt="График работы" class="link__img">
                                 <p class="link__text">
                                     График работы: с 9:00 до 20:00
                                 </p>
                             </a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="item__link">
+                        </div>
+                        <div class="col-md-3 top__col top__col--phone">
+                            <a href="#" class="top__link">
                                 <img src="./assets/images/header/phone.png" alt="Телефон" class="link__img">
                                 <p class="link__text">
                                     +8 (922) 744-20-10
                                 </p>
                             </a>
-                        </li>
-                        <li class="list__item">
-                            <button class="item__btn">
-                                <img src="./assets/images/header/phone.png" alt="Телефон" class="link__img">
-                                <p class="link__text">
-                                    +8 (922) 744-20-10
-                                </p>
+                            <button class="top__btn">
+                                Заказать звонок
                             </button>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="header__bottom">
+            <div class="row header__bottom">
                 <div class="container bottom__container">
-                    <a href="#" class="bottom__link">
-                        <img src="./assets/images/logo.png" alt="Логотип" class="link__img">
+                    <div class="row align-items-center">
+                        <a href="#" class="col-md-2 bottom__link">
+                            <img src="./assets/images/logo.png" alt="Логотип" class="link__img">
 
-                    </a>
-                    <ul class="bottom__list">
-                        <li class="list__item">
-                            <a href="#" class="list__item">Наши услуги</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Наши работы</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">О компании</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Прайс-лист</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Акции</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Партнеры</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Отзывы</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item">Контакты</a>
-                        </li>
-                    </ul>
-                    <button class="btn bottom__btn">Заказать услугу</button>
+                        </a>
+                        <ul class="col bottom__list">
+                            <li class="list__item">
+                                <a href="#" class="list__item">Наши услуги</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Наши работы</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">О компании</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Прайс-лист</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Акции</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Партнеры</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Отзывы</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="list__item">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="col-md-2 bottom__block-btn">
+                            <button class="btn bottom__btn">Заказать услугу</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -96,7 +96,7 @@
                     <li class="slider__slide">
                         <h2 class="slide__title">Акция! Зима не за горами!</h2>
                         <p class="slide__text">
-                            Шиномонтаж четырех колес любого радиуса  в нашем автосервисе «Right Wheels» со скидкой в
+                            Шиномонтаж четырех колес любого радиуса в нашем автосервисе «Right Wheels» со скидкой в
                             25%!
                         </p>
                         <button class="btn slide__btn">Подробней о акции</button>
@@ -104,42 +104,46 @@
                     <li class="slider__slide">
                         <h2 class="slide__title">Акция! Зима не за горами!</h2>
                         <p class="slide__text">
-                            Шиномонтаж четырех колес любого радиуса  в нашем автосервисе «Right Wheels» со скидкой в
+                            Шиномонтаж четырех колес любого радиуса в нашем автосервисе «Right Wheels» со скидкой в
                             25%!
                         </p>
                         <button class="btn slide__btn">Подробней о акции</button>
                     </li>
                 </ul>
+                <button class="hero__arrow hero__arrow--l"><img src="./assets/images/arrow-l.png" alt="left" class="arrow__img"></button>
+                <button class="hero__arrow hero__arrow--r"><img src="./assets/images/arrow-r.png" alt="left" class="arrow__img"></button>
             </div>
         </section>
         <section class="section services">
             <div class="container services__container">
-                <h2 class="title services__title">
-                    <span class="title__num">01</span>
-                    Наши услуги
-                </h2>
-                <ul class="services__list">
-                    <li class="list__item">
+                <div class="title-wrap">
+                    <p class="title__num">01</p>
+                    <h2 class="title services__title">
+                        Наши услуги
+                    </h2>
+                </div>
+                <ul class="row services__list">
+                    <li class="col-md list__item">
                         <a href="#" class="item__link">
-                            <img src="./assets/services/1.png" alt="Услуга" class="link__img">
+                            <img src="./assets/images/services/1.png" alt="Услуга" class="link__img">
                             <p class="link__text">Покраска дисков</p>
                         </a>
                     </li>
-                    <li class="list__item">
+                    <li class="col-md list__item">
                         <a href="#" class="item__link">
-                            <img src="./assets/services/1.png" alt="Услуга" class="link__img">
-                            <p class="link__text">Правка и ремонт дисков</p>
+                            <img src="./assets/images/services/2.png" alt="Услуга" class="link__img">
+                            <p class="link__text">Правка и ремонт дисков</p>
                         </a>
                     </li>
-                    <li class="list__item">
+                    <li class="col-md list__item">
                         <a href="#" class="item__link">
-                            <img src="./assets/services/1.png" alt="Услуга" class="link__img">
+                            <img src="./assets/images/services/3.png" alt="Услуга" class="link__img">
                             <p class="link__text">Шиномонтажные услуги</p>
                         </a>
                     </li>
-                    <li class="list__item">
+                    <li class="col-md list__item">
                         <a href="#" class="item__link">
-                            <img src="./assets/services/1.png" alt="Услуга" class="link__img">
+                            <img src="./assets/images/services/4.png" alt="Услуга" class="link__img">
                             <p class="link__text">Дополнительные услуги</p>
                         </a>
                     </li>
