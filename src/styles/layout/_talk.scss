@@ -1,0 +1,74 @@
+.talk {
+    min-height: 795px;
+
+    .talk__wrap {
+        min-height: 795px;
+
+    }
+
+    .talk__reviews {
+        background: url('../images/talk-bg.png') center center no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .item__text {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .item__block {
+            display: flex;
+            align-items: center;
+        }
+
+        .block__text {
+            font-size: 24px;
+
+            .text__name {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .talk__partners {
+        background: #FAFAFA;
+    }
+
+    .title-wrap {
+        margin-bottom: 0;
+    }
+
+    .plus__title {
+        background: #FAFAFA;
+    }
+
+    .title__num {
+        left: 45px;
+    }
+    
+    .partners__text {
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+
+    .partners__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .list__item {
+            width: 45%;
+            background: #C4C4C4;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+    }
+}

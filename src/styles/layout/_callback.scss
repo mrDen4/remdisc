@@ -1,0 +1,25 @@
+.callback {
+
+    .callback__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form__inp {
+        border: 1px solid $black;
+        padding: 15px 20px;
+        width: 30%;
+        height: 50px;
+    }
+
+    .callback__btn {
+        width: 30%;
+        height: 50px;
+    }
+
+    .text__title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
