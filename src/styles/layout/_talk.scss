@@ -15,14 +15,31 @@
         align-items: center;
         justify-content: center;
 
+        @include phones() {
+            order: 5;
+        }
+
         .item__text {
             font-size: 24px;
             text-align: center;
+
+            @include phones() {
+                font-size: 20px;
+            }
         }
 
         .item__block {
             display: flex;
             align-items: center;
+            margin-top: 50px;
+
+            @include phones() {
+                margin-top: 15px;
+            }
+
+            .block__img {
+                margin-right: 30px;
+            }
         }
 
         .block__text {
@@ -30,6 +47,7 @@
 
             .text__name {
                 font-weight: bold;
+                margin: 0;
             }
         }
     }
@@ -63,12 +81,17 @@
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: 0 30px;
 
         .list__item {
             width: 45%;
             background: #C4C4C4;
             height: 100px;
             margin-bottom: 30px;
+
+            @include phones() {
+                width: 100%;
+            }
         }
     }
 }

@@ -21,6 +21,10 @@
             width: 45%;
             margin-bottom: 50px;
 
+            @include phones() {
+                width: 100%;
+            }
+
             .top__icon {
                 margin-right: 15px;
             }

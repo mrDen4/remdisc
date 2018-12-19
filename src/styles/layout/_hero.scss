@@ -1,5 +1,5 @@
 .hero {
-    background: url('../images/hero-bg.png');
+    background: url('../images/hero-bg.png') center center no-repeat;
     background-size: cover;
     min-height: 750px;
     padding-bottom: 0;
@@ -30,6 +30,11 @@
         width: 60%;
         padding-left: 50px;
 
+        @include phones() {
+            width: 100%;
+            padding: 0 30px;
+        }
+
         .slider__slide {
             display: flex;
             flex-direction: column;
@@ -39,15 +44,30 @@
         .slide__title {
             font-size: 48px;
             font-weight: bold;
+
+            @include phones() {
+                font-size: 36px;
+            }
         }
 
         .slide__text {
             font-size: 24px;
             font-weight: bold;
+
+            @include phones() {
+                font-size: 20px;
+            }
         }
 
         .slide__btn {
             width: 240px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            @include phones() {
+                width: 100%;
+            }
         }
     }
 }

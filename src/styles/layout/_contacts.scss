@@ -11,6 +11,12 @@
         width: 100%;
         height: 100%;
         left: 0;
+
+        @include phones() {
+            position: static;
+            height: 400px;
+            order: 5;
+        }
     }
 
     .contacts__content {
@@ -25,11 +31,21 @@
         padding: 25px 60px;
         width: 50%;
 
+        @include phones() {
+            width: 100%;
+            padding: 25px 10px;
+            font-size: 18px;
+        }
+
         .content__item {
             display: flex;
             align-items: center;
             width: 100%;
             margin-bottom: 50px;
+
+            @include phones() {
+                margin-bottom: 15px;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -52,6 +68,11 @@
 
         .item__img {
             margin-right: 30px;
+
+            @include phones() {
+                margin-right: 15px;
+                width: 25px;
+            }
         }
     }
     

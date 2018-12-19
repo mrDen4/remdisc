@@ -4,6 +4,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     .form__inp {
@@ -11,11 +16,20 @@
         padding: 15px 20px;
         width: 30%;
         height: 50px;
+
+        @include phones() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
 
     .callback__btn {
         width: 30%;
         height: 50px;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .text__title {
