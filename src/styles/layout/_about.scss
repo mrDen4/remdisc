@@ -1,0 +1,33 @@
+.about {
+    background: #FAFAFA;
+
+    .about__text {
+        text-align: center;
+    }
+
+    .services__title {
+        background: #FAFAFA;
+    }
+
+
+    .about__double {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablets() {
+            flex-direction: column;
+        }
+
+        .double__text {
+            width: 45%;
+
+            @include tablets() {
+                width: 100%;
+            }
+        }
+    }
+
+    .about__img {
+        width: 100%;
+    }
+}

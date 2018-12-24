@@ -1,0 +1,39 @@
+.company {
+    background: #FAFAFA;
+
+    .company__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .services__title {
+        background: #FAFAFA;
+    }
+
+    .company__text {
+        width: 45%;
+
+        @include phones() {
+            width: 100%;
+        }
+    }
+
+    .company__img {
+        width: 45%;
+
+        @include phones() {
+            width: 100%;
+        }
+
+        .img__img {
+            width: 100%;
+        }
+    }
+}
