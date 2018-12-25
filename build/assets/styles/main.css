@@ -629,3 +629,32 @@ ul {
       text-align: center; }
     .price .list__table .table__double {
       width: 50%; }
+
+.works .slider__slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .works .slider__slide .slide__from {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .works .slider__slide .from__title {
+    color: #D41F25; }
+
+.works .works__arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  z-index: 100;
+  cursor: pointer; }
+  .works .works__arrow--l {
+    left: 0;
+    top: 50%; }
+  .works .works__arrow--r {
+    right: 0;
+    top: 50%; }
+
+.works .works__wrap {
+  position: relative; }

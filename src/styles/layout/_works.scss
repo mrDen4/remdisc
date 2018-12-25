@@ -1,0 +1,42 @@
+.works {
+    .slider__slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .slide__from {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .from__title {
+            color: $red;
+        }
+    }
+
+    .works__arrow {
+        position: absolute;
+        background: none;
+        border: none;
+        z-index: 100;
+        cursor: pointer;
+
+        &--l {
+            left: 0;
+            top: 50%;
+
+        }
+
+        &--r {
+            right: 0;
+            top: 50%;
+        }
+    }
+
+    .works__wrap {
+        position: relative;
+    }
+}
