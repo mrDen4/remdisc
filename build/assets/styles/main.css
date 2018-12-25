@@ -594,3 +594,38 @@ ul {
         width: 100%; } }
     .company .company__img .img__img {
       width: 100%; }
+
+.price {
+  background: #FAFAFA; }
+  .price .price__content {
+    margin-bottom: 50px; }
+  .price .content__text {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column; }
+  .price .text__title {
+    font-size: 36px;
+    font-weight: bold; }
+  .price .text__btn {
+    width: 250px; }
+  .price .list__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #C4C4C4; }
+    .price .list__table tr, .price .list__table th, .price .list__table td {
+      border: 1px solid #C4C4C4; }
+    .price .list__table tr {
+      transition: .3s; }
+      .price .list__table tr:hover {
+        background: #D41F25;
+        color: #ffffff; }
+    .price .list__table td {
+      text-align: center;
+      padding: 15px; }
+    .price .list__table th {
+      text-align: left;
+      padding: 15px; }
+    .price .list__table .table__title {
+      text-align: center; }
+    .price .list__table .table__double {
+      width: 50%; }
