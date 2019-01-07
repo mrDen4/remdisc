@@ -2,6 +2,7 @@
     background: $black;
     color: #ffffff;
     padding-top: 50px;
+    padding-bottom: 20px;
 
     .footer__top {
         display: flex;
@@ -39,6 +40,10 @@
             text-decoration: none;
             transition: .3s;
 
+            @include tablets() {
+                font-size: 14px;
+            }
+
             &:hover {
                 color: $red;
             }
@@ -50,12 +55,12 @@
         justify-content: space-around;
         margin: 50px 0;
 
-        @include phones() {
+        @include tablets() {
             margin: 20px 0;
         }
 
         .center__item {
-            @include phones() {
+            @include tablets() {
                 margin-bottom: 10px;
             }
         }
@@ -68,8 +73,9 @@
             transition: .3s;
             font-size: 14px;
 
-            @include phones() {
+            @include tablets() {
                 padding: 0;
+                justify-content: center;
             }
 
             &:hover {
@@ -82,7 +88,7 @@
             height: 24px;
             width: 24px;
 
-            @include phones() {
+            @include tablets() {
                 margin-right: 10px;
             }
         }
@@ -93,8 +99,9 @@
             text-decoration: underline;
             color: #ffffff;
             transition: .3s;
+            padding: 0;
 
-            @include phones() {
+            @include tablets() {
                 padding: 0;
                 height: inherit;
             }

@@ -12,7 +12,7 @@
         justify-content: space-between;
         margin-bottom: 30px;
 
-        @include tablets() {
+        @include phones() {
             width: 100%;
             flex-direction: column;
         }

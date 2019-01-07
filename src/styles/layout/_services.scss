@@ -6,6 +6,11 @@
         flex-wrap: wrap;
         width: 100%;
 
+        @include phones() {
+            align-items: center;
+            justify-content: center;
+        }
+
         .list__item {
             display: flex;
             flex-direction: column;
@@ -35,6 +40,10 @@
 
                 .link__text {
                     text-align: center;
+
+                    @include tablets() {
+                        font-size: 18px;
+                    }
                 }
             }
         }

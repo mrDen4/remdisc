@@ -3,6 +3,17 @@
 
     .price__content {
         margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
+    }
+
+    .price__list {
+        overflow: auto;
     }
 
     .content__text {
@@ -18,6 +29,22 @@
 
     .text__btn {
         width: 250px;
+
+        @include tablets() {
+            margin-bottom: 30px;
+        }
+    }
+
+    .content__img {
+        width: 50%;
+
+        @include phones() {
+            width: 100%;
+        }
+
+        .img__img {
+            width: 100%;
+        }
     }
 
     .list__table {

@@ -31,6 +31,10 @@
         padding: 25px 60px;
         width: 50%;
 
+        @include tablets() {
+            font-size: 18px;
+        }
+
         @include phones() {
             width: 100%;
             padding: 25px 10px;
@@ -60,6 +64,10 @@
             text-decoration: none;
             font-size: 24px;
             transition: .3s;
+
+            @include tablets() {
+                font-size: 18px;
+            }
 
             &:hover {
                 color: $red;
