@@ -1,0 +1,150 @@
+.sales {
+
+    .sales__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .list__item {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        @include tablets() {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .item__img {
+            width: 45%;
+            position: relative;
+
+            @include phones() {
+                width: 100%;
+            }
+
+            .img__img {
+                width: 100%;
+            }
+
+            .img__proc {
+                color: #ffffff;
+                background: $red;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                padding: 10px;
+            }
+        }
+
+        .item__content {
+            width: 50%;
+
+            @include phones() {
+                width: 100%;
+            }
+
+            .content__title {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .content__btn {
+                text-decoration: none;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.sale {
+    .sale__about {
+        display: flex;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .about__content {
+            width: 50%;
+            padding-right: 10px;
+
+            @include phones() {
+                width: 100%;
+                padding-right: 0;
+            }
+        }
+
+        .about__img {
+            width: 48%;
+            position: relative;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 30px;
+                order: -1;
+            }
+
+            .img__text {
+                position: absolute;
+                color: #ffffff;
+                background: $red;
+                padding: 20px;
+                top: 20px;
+                left: 20px;
+            }
+
+            .img__img {
+                width: 100%;
+            }
+        }
+
+        .content__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .content__subtitle {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .content__text {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .content__price {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+            font-weight: bold;
+
+            @include tablets() {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            span {
+                text-decoration: line-through;
+            }
+        }
+
+        .content__btn {
+            text-transform: uppercase;
+            font-weight: bold;
+
+            @include phones() {
+                width: 100%;
+            }
+        }
+    }
+}

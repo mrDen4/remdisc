@@ -1,0 +1,14 @@
+.sales .sales__list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.sales .list__item {
+  width: 45%;
+  display: flex;
+  justify-content: space-between; }
+  .sales .list__item .item__img {
+    width: 50%; }
+    .sales .list__item .item__img .img__img {
+      width: 100%; }
+  .sales .list__item .item__content {
+    width: 50%; }
